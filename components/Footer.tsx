@@ -21,11 +21,10 @@ export default function Footer() {
           <Col title="Навигация" links={[
             ["§02 Рынок", "#problem"],
             ["§03 Решение", "#solution"],
-            ["§04 Внутри фабрики", "#infrastructure"],
-            ["§05 Конвейер", "#pipeline"],
-            ["§06 Гарантии", "#guarantees"],
-            ["§10 Тарифы", "#pricing"],
-            ["§11 FAQ", "#faq"],
+            ["§04 Фабрика", "#pipeline"],
+            ["§05 Гарантии", "#guarantees"],
+            ["§09 Тарифы", "#pricing"],
+            ["§10 FAQ", "#faq"],
           ]} />
 
           <Col title="Продукты" links={[

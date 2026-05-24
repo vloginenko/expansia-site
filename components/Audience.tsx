@@ -27,7 +27,7 @@ const groups = [
 
 export default function Audience() {
   return (
-    <Section id="audience" number="07" label="ДЛЯ КОГО">
+    <Section id="audience" number="06" label="ДЛЯ КОГО">
       <div className="mb-14">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           с кем работаем

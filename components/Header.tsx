@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const nav = [
   { href: "#problem", label: "§02 Рынок" },
-  { href: "#infrastructure", label: "§04 Внутри" },
-  { href: "#cases", label: "§09 Цифры" },
-  { href: "#pricing", label: "§10 Тарифы" },
-  { href: "#contact", label: "§12 Заявка" },
+  { href: "#solution", label: "§03 Решение" },
+  { href: "#cases", label: "§08 Цифры" },
+  { href: "#pricing", label: "§09 Тарифы" },
+  { href: "#contact", label: "§11 Заявка" },
 ];
 
 export default function Header() {

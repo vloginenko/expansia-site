@@ -36,7 +36,7 @@ export default function LiveGrid() {
               ● live · что в эфире на этой неделе
             </div>
             <h3 className="mt-3 font-display text-[32px] leading-[1] tracking-tighter2 lg:text-[48px]">
-              Срез с конвейера. <span className="italic">Не&nbsp;стоки.</span>
+              Ролики, которые сейчас работают <span className="italic">на&nbsp;клиентов.</span>
             </h3>
           </div>
           <div className="hairline px-4 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
@@ -95,10 +95,10 @@ export default function LiveGrid() {
       <div className="mx-auto mt-10 max-w-[1440px] px-6 lg:px-10">
         <div className="grid grid-cols-2 gap-px bg-line lg:grid-cols-4">
           {[
-            { v: "8.4M", l: "плеев за апрель / по портфелю" },
-            { v: "9.1%", l: "медианный CTR" },
-            { v: "₽184", l: "средняя цена за 1k плеев" },
-            { v: "₽340", l: "цена заявки в среднем" },
+            { v: "8.4M", l: "просмотров за месяц / по всем клиентам" },
+            { v: "9.1%", l: "средний CTR" },
+            { v: "₽184", l: "цена 1 000 просмотров" },
+            { v: "₽340", l: "средняя цена заявки" },
           ].map((s) => (
             <div key={s.l} className="bg-panel p-5 lg:p-6">
               <div className="bignum font-display text-[36px] leading-none tracking-tighter2 lg:text-[44px]">

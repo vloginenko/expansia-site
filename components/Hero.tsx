@@ -35,18 +35,9 @@ export default function Hero() {
             {...fade(0.25)}
             className="mt-7 max-w-[600px] text-[17px] leading-[1.6] text-ink lg:text-[19px]"
           >
-            До <span className="bg-acid/15 px-1 text-ink">900&nbsp;уникальных видео</span> в&nbsp;месяц на одного клиента. Не копии,
-            не нарезки — каждый ролик уникален по сценарию, хуку, монтажу
-            и&nbsp;музыке, чтобы алгоритмы не понижали и не банили.
-          </motion.p>
-
-          <motion.p
-            {...fade(0.32)}
-            className="mt-4 max-w-[600px] text-[15px] leading-[1.55] text-ink/85 lg:text-[16px]"
-          >
-            Сверху — воронка, которая превращает просмотры в заявки в&nbsp;CRM.
-            Снизу — наша инфраструктура: прогретые аккаунты, прокси, антибан.
-            Объём и&nbsp;просмотры — цифрой в&nbsp;договоре.
+            До <span className="bg-acid/15 px-1 text-ink">900&nbsp;видео в&nbsp;месяц</span>{" "}
+            под ключ: сценарии, монтаж, постинг, воронка. Платите
+            за&nbsp;результат — объём и&nbsp;просмотры закреплены в&nbsp;договоре.
           </motion.p>
 
           <motion.div
@@ -72,8 +63,8 @@ export default function Hero() {
             className="mt-12 grid max-w-[640px] grid-cols-2 gap-px bg-line lg:grid-cols-4"
           >
             {[
-              { v: "до 900", l: "уникальных видео / мес" },
-              { v: "от ₽190", l: "стоимость 1 ролика" },
+              { v: "до 900", l: "видео в месяц" },
+              { v: "₽340", l: "средняя цена заявки" },
               { v: "14 дней", l: "до первого выхода" },
               { v: "≥ 8M", l: "просмотров по договору" },
             ].map((s) => (

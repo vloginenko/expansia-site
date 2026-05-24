@@ -4,7 +4,7 @@ import Section from "./Section";
 
 export default function CGPro() {
   return (
-    <Section id="cgpro" number="08" label="CG PRO">
+    <Section id="cgpro" number="07" label="CG PRO">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -61,7 +61,7 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <Section id="pricing" number="10" label="ТАРИФЫ">
+    <Section id="pricing" number="09" label="ТАРИФЫ">
       <div className="mb-14">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           сколько стоит

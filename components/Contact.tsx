@@ -34,7 +34,7 @@ export default function Contact() {
   }
 
   return (
-    <Section id="contact" number="12" label="ЗАЯВКА">
+    <Section id="contact" number="11" label="ЗАЯВКА">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
         <div>
           <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">

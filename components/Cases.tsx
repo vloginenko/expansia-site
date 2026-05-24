@@ -42,7 +42,7 @@ const cases = [
 
 export default function Cases() {
   return (
-    <Section id="cases" number="09" label="ЦИФРЫ">
+    <Section id="cases" number="08" label="ЦИФРЫ">
       <div className="mb-12">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           что получилось
