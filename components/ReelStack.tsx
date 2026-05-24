@@ -37,7 +37,7 @@ export default function ReelStack() {
           <div
             className={`${r.fill} hairline relative h-[300px] w-[170px] overflow-hidden lg:h-[380px] lg:w-[214px]`}
           >
-            <div className="absolute left-2 top-2 right-2 flex items-center justify-between font-mono text-[9px] uppercase tracking-[0.18em] text-ink/70">
+            <div className="absolute left-2 top-2 right-2 flex items-center justify-between font-mono text-[9px] uppercase tracking-[0.18em] text-ink/90">
               <span>{r.label}</span>
               <span className="bg-bg/60 px-1.5 py-0.5">{r.views}</span>
             </div>

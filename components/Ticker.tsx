@@ -17,7 +17,7 @@ export default function Ticker() {
         {row.map((t, i) => (
           <span
             key={i}
-            className="mx-8 inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.2em] text-ink/80"
+            className="mx-8 inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.2em] text-ink/90"
           >
             <span className="text-acid">●</span>
             {t}

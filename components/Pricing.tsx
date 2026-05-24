@@ -8,6 +8,7 @@ const tiers = [
     n: "01",
     price: "от 180 000 ₽",
     period: "в месяц",
+    perUnit: "₽6 000 / ролик",
     headline: "Запуск фабрики",
     kpi: "≥ 1.5M просмотров",
     body: "Базовая конфигурация: 30 видео в месяц, один контент-вектор, базовая воронка (лид-магнит + DM-сценарий).",
@@ -24,6 +25,7 @@ const tiers = [
     n: "02",
     price: "от 380 000 ₽",
     period: "в месяц",
+    perUnit: "₽6 333 / ролик",
     headline: "Объём и тесты",
     kpi: "≥ 4M просмотров",
     body: "Рабочий тариф для бизнеса в активной фазе. Много контента, мультиплатформенность, A/B на хуках, продвинутая воронка.",
@@ -42,6 +44,7 @@ const tiers = [
     n: "03",
     price: "от 690 000 ₽",
     period: "в месяц",
+    perUnit: "₽5 750 / ролик",
     headline: "Несколько брендов",
     kpi: "от 10M просмотров",
     body: "Для холдингов, сеток клиник и компаний с несколькими спикерами. Несколько аватаров, отдельная команда, отдел продаж под ключ.",
@@ -58,7 +61,7 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <Section id="pricing" number="09" label="ТАРИФЫ">
+    <Section id="pricing" number="10" label="ТАРИФЫ">
       <div className="mb-14">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           сколько стоит
@@ -113,7 +116,7 @@ export default function Pricing() {
                   t.featured ? "text-bg/70" : "text-muted"
                 }`}
               >
-                {t.period}
+                {t.period} · <span className={t.featured ? "text-bg" : "text-acid"}>{t.perUnit}</span>
               </div>
             </div>
 
@@ -122,7 +125,7 @@ export default function Pricing() {
             </div>
             <p
               className={`mt-3 text-[14px] leading-[1.55] ${
-                t.featured ? "text-bg/80" : "text-ink/70"
+                t.featured ? "text-bg/80" : "text-ink/90"
               }`}
             >
               {t.body}

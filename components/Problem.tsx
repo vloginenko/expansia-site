@@ -28,7 +28,13 @@ export default function Problem() {
               <br />
               Внимание <span className="italic">не покупается.</span>
             </h2>
-            <div className="mt-8 space-y-5 text-[16px] leading-[1.6] text-ink/85 lg:text-[18px]">
+            <div className="mt-8 space-y-5 text-[16px] leading-[1.6] text-ink/90 lg:text-[18px]">
+              <p className="text-ink">
+                Экономика платного трафика перестала сходиться. Клик дорожает,
+                покупатель — нет. Считаешь юнит-экономику в конце квартала и
+                видишь: чтобы остаться в плюсе, нужно либо поднимать чек, либо
+                менять канал.
+              </p>
               <p>
                 Каждый квартал клиент стоит дороже. Аудитории выгорают за неделю.
                 Площадки режут охваты у тех, кто платит, и поднимают у тех, кто
@@ -77,7 +83,7 @@ export default function Problem() {
                 <div className="mt-3 bignum font-display text-[56px] leading-none tracking-tighter2 lg:text-[80px]">
                   {s.v}
                 </div>
-                <div className="mt-3 text-[13px] leading-snug text-ink/70">
+                <div className="mt-3 text-[13px] leading-snug text-ink/90">
                   {s.note}
                 </div>
               </motion.div>

@@ -34,7 +34,7 @@ export default function Contact() {
   }
 
   return (
-    <Section id="contact" number="11" label="ЗАЯВКА">
+    <Section id="contact" number="12" label="ЗАЯВКА">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
         <div>
           <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
@@ -43,13 +43,13 @@ export default function Contact() {
           <h2 className="mt-4 font-display text-[40px] leading-[1] tracking-tighter2 lg:text-[72px]">
             Оставьте заявку — <span className="italic">пришлём&nbsp;план</span> и цифру.
           </h2>
-          <p className="mt-7 max-w-[480px] text-[16px] leading-[1.6] text-ink/75 lg:text-[18px]">
+          <p className="mt-7 max-w-[480px] text-[16px] leading-[1.6] text-ink/90 lg:text-[18px]">
             В течение рабочего дня свяжемся, зададим 6–8 вопросов про ваш
             продукт и пришлём план фабрики с конкретной цифрой по KPI и
             стоимости. Не берёмся, если видим, что не вытянем.
           </p>
 
-          <div className="mt-10 space-y-3 font-mono text-[12px] uppercase tracking-[0.18em] text-ink/70">
+          <div className="mt-10 space-y-3 font-mono text-[12px] uppercase tracking-[0.18em] text-ink/90">
             <div>
               <span className="text-muted">tg ·</span>{" "}
               <a className="ulink" href="https://t.me/expansia">

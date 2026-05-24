@@ -37,7 +37,7 @@ const steps = [
 
 export default function Pipeline() {
   return (
-    <Section id="pipeline" number="04" label="ФАБРИКА">
+    <Section id="pipeline" number="05" label="ФАБРИКА">
       <div className="mb-14">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           как устроено
@@ -64,7 +64,7 @@ export default function Pipeline() {
               <h3 className="font-display text-[24px] leading-tight tracking-tightish lg:text-[34px]">
                 {s.title}
               </h3>
-              <p className="mt-2 max-w-[640px] text-[15px] leading-[1.55] text-ink/70 lg:text-[16px]">
+              <p className="mt-2 max-w-[640px] text-[15px] leading-[1.55] text-ink/90 lg:text-[16px]">
                 {s.body}
               </p>
             </div>

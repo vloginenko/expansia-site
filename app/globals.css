@@ -12,6 +12,7 @@
 html, body {
   background: var(--bg);
   color: var(--ink);
+  font-weight: 450;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -19,6 +20,13 @@ html, body {
 /* Cormorant — выше контраст в крупных кеглях, минус трекинг */
 .font-display {
   font-feature-settings: "liga", "dlig";
+  font-weight: 500;
+}
+.font-display em,
+.font-display .italic,
+em {
+  font-weight: 400;
+  font-style: italic;
 }
 
 ::selection {

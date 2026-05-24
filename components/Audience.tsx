@@ -27,7 +27,7 @@ const groups = [
 
 export default function Audience() {
   return (
-    <Section id="audience" number="06" label="ДЛЯ КОГО">
+    <Section id="audience" number="07" label="ДЛЯ КОГО">
       <div className="mb-14">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           с кем работаем
@@ -52,10 +52,10 @@ export default function Audience() {
             <h3 className="mt-3 font-display text-[28px] leading-tight tracking-tightish lg:text-[36px]">
               {g.h}
             </h3>
-            <div className="mt-2 text-[13px] leading-snug text-ink/55">
+            <div className="mt-2 text-[13px] leading-snug text-ink/75">
               {g.sub}
             </div>
-            <p className="mt-5 max-w-[480px] text-[15px] leading-[1.55] text-ink/80 lg:text-[16px]">
+            <p className="mt-5 max-w-[480px] text-[15px] leading-[1.55] text-ink/90 lg:text-[16px]">
               {g.note}
             </p>
           </motion.div>

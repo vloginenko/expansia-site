@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const nav = [
   { href: "#problem", label: "§02 Рынок" },
-  { href: "#solution", label: "§03 Решение" },
-  { href: "#pipeline", label: "§04 Фабрика" },
-  { href: "#pricing", label: "§09 Тарифы" },
-  { href: "#contact", label: "§11 Заявка" },
+  { href: "#infrastructure", label: "§04 Внутри" },
+  { href: "#cases", label: "§09 Цифры" },
+  { href: "#pricing", label: "§10 Тарифы" },
+  { href: "#contact", label: "§12 Заявка" },
 ];
 
 export default function Header() {
@@ -24,7 +24,7 @@ export default function Header() {
             <a
               key={n.href}
               href={n.href}
-              className="ulink font-mono text-[11px] uppercase tracking-[0.18em] text-ink/70 hover:text-ink"
+              className="ulink font-mono text-[11px] uppercase tracking-[0.18em] text-ink/90 hover:text-ink"
             >
               {n.label}
             </a>

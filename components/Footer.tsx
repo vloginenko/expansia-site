@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="font-display text-[44px] leading-none tracking-tighter2 lg:text-[64px]">
               эксп<span className="italic">а</span>нсия
             </div>
-            <p className="mt-4 max-w-[360px] text-[14px] leading-[1.55] text-ink/65">
+            <p className="mt-4 max-w-[360px] text-[14px] leading-[1.55] text-ink/85">
               Контент-агентство полного цикла. Строим фабрики на CG Pro.
               Работаем по договору с гарантией просмотров.
             </p>
@@ -21,16 +21,18 @@ export default function Footer() {
           <Col title="Навигация" links={[
             ["§02 Рынок", "#problem"],
             ["§03 Решение", "#solution"],
-            ["§04 Фабрика", "#pipeline"],
-            ["§05 Гарантии", "#guarantees"],
-            ["§09 Тарифы", "#pricing"],
-            ["§10 FAQ", "#faq"],
+            ["§04 Внутри фабрики", "#infrastructure"],
+            ["§05 Конвейер", "#pipeline"],
+            ["§06 Гарантии", "#guarantees"],
+            ["§10 Тарифы", "#pricing"],
+            ["§11 FAQ", "#faq"],
           ]} />
 
           <Col title="Продукты" links={[
             ["CG Pro / подписка", "https://congen.pro"],
             ["Экспансия / агентство", "#contact"],
             ["Кейсы", "#cases"],
+            ["Партнёрка · 25%", "#contact"],
           ]} />
 
           <Col title="Контакты" links={[
@@ -62,7 +64,7 @@ function Col({ title, links }: { title: string; links: [string, string][] }) {
           <li key={label}>
             <a
               href={href}
-              className="ulink text-[14px] leading-snug text-ink/80 hover:text-ink"
+              className="ulink text-[14px] leading-snug text-ink/90 hover:text-ink"
             >
               {label}
             </a>

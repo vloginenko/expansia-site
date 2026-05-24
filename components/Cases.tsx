@@ -10,6 +10,14 @@ const stats = [
 
 const cases = [
   {
+    tag: "сами на себе · флагман",
+    title: "Фабрику обкатали на собственном агентстве",
+    before: "В январе у нас был один Telegram-канал на 1 200 человек и сарафан. Хотели вырастить входящий поток до 80 квалифицированных заявок в месяц без таргета.",
+    did: "Включили на себя ту же фабрику, что продаём клиентам. 90 видео в месяц, нейроаватар основателя, B-roll из старых эфиров. Воронка: лид-магнит «как мы делаем 60 видео без съёмок» → DM-бот → созвон.",
+    result: "За 4 месяца — 6.8M плеев, 412 заявок, 71 договор. Сейчас 80% входящих — из контента, а не с рекомендаций. Если не работает на нас — не имеем права продавать.",
+    featured: true,
+  },
+  {
     tag: "недвижимость · РФ",
     title: "Из 0 в 12 млн плеев за квартал",
     before: "Эксперт по новостройкам без блога. Один аккаунт, 800 подписчиков.",
@@ -34,7 +42,7 @@ const cases = [
 
 export default function Cases() {
   return (
-    <Section id="cases" number="08" label="ЦИФРЫ">
+    <Section id="cases" number="09" label="ЦИФРЫ">
       <div className="mb-12">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           что получилось
@@ -57,7 +65,7 @@ export default function Cases() {
             <div className="bignum font-display text-[64px] leading-none tracking-tighter2 lg:text-[96px]">
               {s.v}
             </div>
-            <div className="mt-4 max-w-[260px] text-[13px] leading-snug text-ink/70">
+            <div className="mt-4 max-w-[260px] text-[13px] leading-snug text-ink/90">
               {s.l}
             </div>
           </motion.div>
@@ -72,13 +80,15 @@ export default function Cases() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: i * 0.06 }}
-            className="grid grid-cols-1 gap-6 bg-bg p-8 lg:grid-cols-[200px_1fr_1fr_1fr] lg:gap-10 lg:p-10"
+            className={`grid grid-cols-1 gap-6 p-8 lg:grid-cols-[220px_1fr_1fr_1fr] lg:gap-10 lg:p-10 ${
+              c.featured ? "bg-acid text-bg" : "bg-bg"
+            }`}
           >
             <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-acid">
-                кейс / 0{i + 1}
+              <div className={`font-mono text-[10px] uppercase tracking-[0.22em] ${c.featured ? "text-bg" : "text-acid"}`}>
+                {c.featured ? "★ флагман · мы сами" : `кейс / 0${i + 1}`}
               </div>
-              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
+              <div className={`mt-1 font-mono text-[10px] uppercase tracking-[0.22em] ${c.featured ? "text-bg/80" : "text-muted"}`}>
                 {c.tag}
               </div>
               <h3 className="mt-4 font-display text-[24px] leading-tight tracking-tightish lg:text-[28px]">
@@ -86,22 +96,22 @@ export default function Cases() {
               </h3>
             </div>
             <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
+              <div className={`font-mono text-[10px] uppercase tracking-[0.22em] ${c.featured ? "text-bg/70" : "text-muted"}`}>
                 / было
               </div>
-              <p className="mt-2 text-[14px] leading-[1.55] text-ink/75">{c.before}</p>
+              <p className={`mt-2 text-[14px] leading-[1.55] ${c.featured ? "text-bg/90" : "text-ink/90"}`}>{c.before}</p>
             </div>
             <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
+              <div className={`font-mono text-[10px] uppercase tracking-[0.22em] ${c.featured ? "text-bg/70" : "text-muted"}`}>
                 / сделали
               </div>
-              <p className="mt-2 text-[14px] leading-[1.55] text-ink/75">{c.did}</p>
+              <p className={`mt-2 text-[14px] leading-[1.55] ${c.featured ? "text-bg/90" : "text-ink/90"}`}>{c.did}</p>
             </div>
             <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-acid">
+              <div className={`font-mono text-[10px] uppercase tracking-[0.22em] ${c.featured ? "text-bg" : "text-acid"}`}>
                 / результат
               </div>
-              <p className="mt-2 text-[14px] leading-[1.55] text-ink">{c.result}</p>
+              <p className={`mt-2 text-[14px] leading-[1.55] ${c.featured ? "text-bg" : "text-ink"}`}>{c.result}</p>
             </div>
           </motion.article>
         ))}

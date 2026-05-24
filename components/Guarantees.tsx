@@ -20,6 +20,16 @@ const items = [
   },
   {
     n: "§5.4",
+    title: "Аккаунты не банят",
+    body: "За shadowban или блокировку по нашей вине — восстанавливаем за свой счёт. Уникализация и инфраструктура (см. §04) держат это на нуле, но если случилось — это наш убыток, не клиента.",
+  },
+  {
+    n: "§5.5",
+    title: "Старт за 14 дней",
+    body: "От подписания договора до первого ролика в эфире — не больше двух недель. Если задерживаемся по нашей вине — компенсируем неделю работы.",
+  },
+  {
+    n: "§5.6",
     title: "Прозрачный дашборд",
     body: "Доступ к рабочему окну 24/7: что в работе, что опубликовано, какие цифры. Без отчётов в PDF на 40 слайдов.",
   },
@@ -27,7 +37,7 @@ const items = [
 
 export default function Guarantees() {
   return (
-    <Section id="guarantees" number="05" label="ГАРАНТИИ">
+    <Section id="guarantees" number="06" label="ГАРАНТИИ">
       <div className="mb-14 grid grid-cols-1 gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
         <div>
           <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
@@ -40,7 +50,7 @@ export default function Guarantees() {
           </h2>
         </div>
         <div className="flex items-end">
-          <p className="max-w-[480px] text-[16px] leading-[1.6] text-ink/75 lg:text-[18px]">
+          <p className="max-w-[480px] text-[16px] leading-[1.6] text-ink/90 lg:text-[18px]">
             Мы работаем по договору с фиксированным KPI. Если не добираем —
             догоняем за свой счёт. Так у клиента нет риска платить за «процесс»,
             а у нас нет соблазна снимать ради красоты.
@@ -69,7 +79,7 @@ export default function Guarantees() {
             <h3 className="font-display text-[26px] leading-tight tracking-tightish lg:text-[32px]">
               {it.title}
             </h3>
-            <p className="mt-3 max-w-[440px] text-[15px] leading-[1.55] text-ink/70 lg:text-[16px]">
+            <p className="mt-3 max-w-[440px] text-[15px] leading-[1.55] text-ink/90 lg:text-[16px]">
               {it.body}
             </p>
           </motion.div>
