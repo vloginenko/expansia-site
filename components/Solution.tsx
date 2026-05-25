@@ -6,26 +6,26 @@ const cards = [
   {
     n: "01",
     big: "8 → 1",
-    title: "Вся редакция — один человек",
-    body: "Сценарист, монтажёр, SMM, таргетолог. Всё это делает наш сервис. С вашей стороны — один продюсер, который следит за качеством. Это мы.",
+    title: "Редакция в одном продюсере",
+    body: "Сценарист, монтажёр, SMM, таргетолог — заменены AI-конвейером. Сверху — один продюсер.",
   },
   {
     n: "02",
-    big: "до 900",
+    big: "900",
     title: "Видео в месяц",
-    body: "Столько контента, сколько алгоритмы любят. Ежедневный постинг, разные форматы и хуки. Снимаем с вас всю рутину: придумывание, съёмки, монтаж, публикацию.",
+    body: "Столько контента, сколько любят алгоритмы. Постим ежедневно, тестируем хуки пачками.",
   },
   {
     n: "03",
     big: "₽190",
     title: "Себестоимость ролика",
-    body: "Один ролик в нашем конвейере стоит как обед, а не как съёмочный день. На сэкономленные деньги работает воронка и A/B-тесты, а не зарплаты.",
+    body: "Ролик у нас стоит как обед, а не как съёмочный день. Бюджет уходит в воронку, а не в зарплаты.",
   },
   {
     n: "04",
-    big: "→ заявка",
-    title: "Контент = заявки, а не лайки",
-    body: "Каждое видео ведёт к следующему шагу — на лид-магнит, в чат-бот, в CRM. Зритель не теряется между постом и заявкой. Просмотр без действия для нас — брак.",
+    big: "→",
+    title: "Контент = заявки",
+    body: "Каждое видео ведёт к шагу: лид-магнит, бот, CRM. Просмотр без действия для нас — брак.",
   },
 ];
 
@@ -36,14 +36,14 @@ export default function Solution() {
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           что предлагаем
         </div>
-        <h2 className="mt-4 max-w-[920px] font-display text-[40px] leading-[1] tracking-tighter2 lg:text-[72px]">
-          Делаем за&nbsp;вас. <span className="italic">Платите за&nbsp;заявки,</span>
+        <h2 className="mt-4 max-w-[1000px] font-display text-[40px] font-bold leading-[0.95] tracking-tighter2 lg:text-[72px]">
+          Делаем за&nbsp;вас.
           <br />
-          а не за процесс.
+          <span className="text-grad">Платите за&nbsp;заявки.</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-px bg-line md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-px bg-line md:grid-cols-2 lg:grid-cols-4">
         {cards.map((c, i) => (
           <motion.div
             key={c.n}
@@ -51,20 +51,18 @@ export default function Solution() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: i * 0.07 }}
-            className="bg-bg p-8 lg:p-10"
+            className="card-glow group flex flex-col gap-5 bg-bg p-7 lg:p-8"
           >
-            <div className="flex items-baseline justify-between">
-              <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
-                /{c.n}
-              </span>
-              <span className="font-display text-[60px] leading-none tracking-tighter2 text-ink lg:text-[80px]">
-                {c.big}
-              </span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-acid">
+              /{c.n}
+            </span>
+            <div className="bignum font-display text-[64px] font-bold leading-none tracking-tighter2 lg:text-[88px]">
+              {c.big}
             </div>
-            <h3 className="mt-6 font-display text-[26px] leading-tight tracking-tightish lg:text-[30px]">
+            <h3 className="font-display text-[22px] font-semibold leading-tight tracking-tightish lg:text-[26px]">
               {c.title}
             </h3>
-            <p className="mt-3 text-[15px] leading-[1.55] text-ink/90 lg:text-[16px]">
+            <p className="text-[14px] leading-[1.55] text-ink/85 lg:text-[15px]">
               {c.body}
             </p>
           </motion.div>

@@ -35,8 +35,8 @@ export default function LiveGrid() {
             <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
               ● live · что в эфире на этой неделе
             </div>
-            <h3 className="mt-3 font-display text-[32px] leading-[1] tracking-tighter2 lg:text-[48px]">
-              Ролики, которые сейчас работают <span className="italic">на&nbsp;клиентов.</span>
+            <h3 className="mt-3 font-display text-[32px] font-bold leading-[0.95] tracking-tighter2 lg:text-[48px]">
+              Что сейчас работает <span className="text-grad">на&nbsp;клиентов.</span>
             </h3>
           </div>
           <div className="hairline px-4 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-muted">

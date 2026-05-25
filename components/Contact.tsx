@@ -40,8 +40,8 @@ export default function Contact() {
           <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
             давайте посчитаем
           </div>
-          <h2 className="mt-4 font-display text-[40px] leading-[1] tracking-tighter2 lg:text-[72px]">
-            Напишите нам — <span className="italic">обсудим</span>.
+          <h2 className="mt-4 font-display text-[40px] font-bold leading-[0.95] tracking-tighter2 lg:text-[72px]">
+            Напишите. <span className="text-grad">Обсудим.</span>
           </h2>
           <p className="mt-7 max-w-[480px] text-[16px] leading-[1.6] text-ink/90 lg:text-[18px]">
             Поговорим, чем можем быть полезны, и накидаем план работы под вашу

@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Cormorant_Garamond, Onest } from "next/font/google";
+import { JetBrains_Mono, Unbounded, Manrope } from "next/font/google";
 import "./globals.css";
 
-const onest = Onest({
+const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
+  display: "swap",
+});
+
+const unbounded = Unbounded({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -16,22 +23,14 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   title: "Экспансия — контент-фабрика с гарантией просмотров",
   description:
-    "Строим контент-фабрики на базе AI-сервиса CG Pro. Вертикальное видео + конверсионная воронка. По договору. С гарантией просмотров.",
+    "Строим контент-фабрики на базе AI-сервиса CG Pro. Вертикальное видео и воронка под ключ. По договору, с гарантией просмотров.",
   openGraph: {
     title: "Экспансия — контент-фабрика с гарантией просмотров",
     description:
-      "AI-производство вертикального контента + воронка продаж. Не пакет постов, а поток заявок.",
+      "AI-производство вертикального контента плюс воронка продаж. Не пакет постов, а поток заявок.",
     type: "website",
     locale: "ru_RU",
   },
@@ -42,9 +41,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="ru"
-      className={`${onest.variable} ${jetbrains.variable} ${cormorant.variable}`}
+      className={`${manrope.variable} ${jetbrains.variable} ${unbounded.variable}`}
     >
-      <body className="grain font-sans antialiased">
+      <body className="font-sans antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -59,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "@type": "Service",
                 name: "Контент-фабрика под ключ",
                 description:
-                  "Производство 30–120 вертикальных видео в месяц с гарантией просмотров по договору.",
+                  "Производство 30–900 вертикальных видео в месяц с гарантией просмотров по договору.",
               },
             }),
           }}
