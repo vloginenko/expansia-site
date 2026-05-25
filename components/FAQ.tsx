@@ -34,7 +34,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <Section id="faq" number="10" label="ВОПРОСЫ">
+    <Section id="faq" number="09" label="ВОПРОСЫ">
       <div className="mb-12">
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           частые вопросы

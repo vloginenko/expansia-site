@@ -5,8 +5,8 @@ const nav = [
   { href: "#problem", label: "§02 Рынок" },
   { href: "#solution", label: "§03 Решение" },
   { href: "#cases", label: "§08 Цифры" },
-  { href: "#pricing", label: "§09 Тарифы" },
-  { href: "#contact", label: "§11 Заявка" },
+  { href: "#faq", label: "§09 Вопросы" },
+  { href: "#contact", label: "§10 Заявка" },
 ];
 
 export default function Header() {

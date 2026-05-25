@@ -9,7 +9,6 @@ import Audience from "@/components/Audience";
 import CGPro from "@/components/CGPro";
 import Cases from "@/components/Cases";
 import LiveGrid from "@/components/LiveGrid";
-import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -28,7 +27,6 @@ export default function Page() {
       <CGPro />
       <LiveGrid />
       <Cases />
-      <Pricing />
       <FAQ />
       <Contact />
       <Footer />

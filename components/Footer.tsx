@@ -23,8 +23,7 @@ export default function Footer() {
             ["§03 Решение", "#solution"],
             ["§04 Фабрика", "#pipeline"],
             ["§05 Гарантии", "#guarantees"],
-            ["§09 Тарифы", "#pricing"],
-            ["§10 FAQ", "#faq"],
+            ["§09 FAQ", "#faq"],
           ]} />
 
           <Col title="Продукты" links={[
