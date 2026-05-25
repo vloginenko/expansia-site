@@ -6,7 +6,7 @@ const cards = [
   {
     n: "01",
     big: "8 → 1",
-    title: "Редакция в одном продюсере",
+    title: "Команда в одном продюсере",
     body: "Сценарист, монтажёр, SMM, таргетолог — заменены AI-конвейером. Сверху — один продюсер.",
   },
   {
@@ -36,10 +36,10 @@ export default function Solution() {
         <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
           что предлагаем
         </div>
-        <h2 className="mt-4 max-w-[1000px] font-display text-[40px] font-bold leading-[0.95] tracking-tighter2 lg:text-[72px]">
+        <h2 className="mt-4 max-w-[1100px] font-display text-[40px] font-bold leading-[0.95] tracking-tighter2 lg:text-[72px]">
           Делаем за&nbsp;вас.
           <br />
-          <span className="text-grad">Платите за&nbsp;заявки.</span>
+          <span className="text-grad">Массовая генерация контента.</span>
         </h2>
       </div>
 

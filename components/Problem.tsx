@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Section from "./Section";
 
 const stats = [
-  { k: "CPM в Meta / VK", v: "+38%", note: "год к году, по нашим клиентам" },
+  { k: "Цена клика в рекламе", v: "+38%", note: "год к году" },
 ];
 
 export default function Problem() {
@@ -20,22 +20,22 @@ export default function Problem() {
             <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-acid">
               положение дел
             </div>
-            <h2 className="mt-4 font-display text-[40px] font-bold leading-[1] tracking-tighter2 lg:text-[64px]">
+            <h2 className="mt-4 font-display text-[40px] font-bold leading-[0.95] tracking-tighter2 lg:text-[64px]">
               Реклама дорожает.
               <br />
-              Внимание <span className="text-grad">не&nbsp;покупается.</span>
+              Эффективность <span className="text-grad">падает.</span>
             </h2>
             <div className="mt-8 space-y-5 text-[17px] leading-[1.6] text-ink/90 lg:text-[19px]">
               <p className="text-ink">
                 Платный трафик перестал окупаться. Клик дорожает, покупатель — нет.
               </p>
               <p>
-                Контент-маркетинг работает, но классическая редакция —
+                Контент-маркетинг работает, но классическая команда —
                 это <span className="bg-acid/15 px-1 text-ink">5–8 человек и&nbsp;от&nbsp;400к&nbsp;₽ в&nbsp;месяц</span>.
                 Полгода до результата. Постоянный контроль.
               </p>
               <p className="text-muted">
-                Бизнес знает, что контент нужен. Но&nbsp;содержать редакцию не&nbsp;готов.
+                Бизнес знает, что контент нужен. Но&nbsp;содержать такую команду не&nbsp;готов.
               </p>
             </div>
           </motion.div>
@@ -52,18 +52,13 @@ export default function Problem() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="group bg-bg p-6 transition-colors hover:bg-panel"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
-                    {s.k}
-                  </div>
-                  <div className="font-mono text-[9px] uppercase tracking-[0.22em] text-acid">
-                    индекс
-                  </div>
+                <div className="font-sans text-[15px] font-semibold uppercase tracking-[0.08em] text-ink lg:text-[17px]">
+                  {s.k}
                 </div>
-                <div className="mt-3 bignum font-display text-[56px] leading-none tracking-tighter2 lg:text-[80px]">
+                <div className="mt-4 bignum font-display text-[72px] font-bold leading-none tracking-tighter2 lg:text-[110px]">
                   {s.v}
                 </div>
-                <div className="mt-3 text-[13px] leading-snug text-ink/90">
+                <div className="mt-3 text-[14px] text-ink/85 lg:text-[15px]">
                   {s.note}
                 </div>
               </motion.div>
