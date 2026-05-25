@@ -60,13 +60,12 @@ export default function Hero() {
 
           <motion.div
             {...fade(0.55)}
-            className="mt-12 grid max-w-[640px] grid-cols-2 gap-px bg-line lg:grid-cols-4"
+            className="mt-12 grid max-w-[560px] grid-cols-3 gap-px bg-line"
           >
             {[
               { v: "до 900", l: "видео в месяц" },
               { v: "₽340", l: "средняя цена заявки" },
-              { v: "14 дней", l: "до первого выхода" },
-              { v: "≥ 8M", l: "просмотров по договору" },
+              { v: "7 дней", l: "до первого ролика" },
             ].map((s) => (
               <div key={s.l} className="bg-bg p-4">
                 <div className="font-display text-[28px] leading-none lg:text-[34px]">

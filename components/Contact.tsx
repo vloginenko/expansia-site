@@ -41,12 +41,11 @@ export default function Contact() {
             давайте посчитаем
           </div>
           <h2 className="mt-4 font-display text-[40px] leading-[1] tracking-tighter2 lg:text-[72px]">
-            Оставьте заявку — <span className="italic">пришлём&nbsp;план</span> и цифру.
+            Напишите нам — <span className="italic">обсудим</span>.
           </h2>
           <p className="mt-7 max-w-[480px] text-[16px] leading-[1.6] text-ink/90 lg:text-[18px]">
-            В течение рабочего дня свяжемся, зададим 6–8 вопросов про ваш
-            продукт и пришлём план фабрики с конкретной цифрой по KPI и
-            стоимости. Не берёмся, если видим, что не вытянем.
+            Поговорим, чем можем быть полезны, и накидаем план работы под вашу
+            задачу. Без давления и обязательств.
           </p>
 
           <div className="mt-10 space-y-3 font-mono text-[12px] uppercase tracking-[0.18em] text-ink/90">

@@ -77,7 +77,7 @@ export default function LiveGrid() {
                 <div className="mt-3 h-px bg-ink/30" />
                 <div className="mt-2 flex items-baseline justify-between font-mono text-[10px] uppercase tracking-[0.2em]">
                   <span className="text-ink">
-                    {r.views} <span className="text-muted">плеев</span>
+                    {r.views} <span className="text-muted">просмотров</span>
                   </span>
                   <span className="text-acid">ctr {r.ctr}</span>
                 </div>

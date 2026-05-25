@@ -37,9 +37,9 @@ export default function Solution() {
           что предлагаем
         </div>
         <h2 className="mt-4 max-w-[920px] font-display text-[40px] leading-[1] tracking-tighter2 lg:text-[72px]">
-          Не редакция. <span className="italic">Конвейер.</span>
+          Делаем за&nbsp;вас. <span className="italic">Платите за&nbsp;заявки,</span>
           <br />
-          С продюсером сверху и воронкой снизу.
+          а не за процесс.
         </h2>
       </div>
 

@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 import Section from "./Section";
 
 const stats = [
-  { k: "CPM в Meta/VK", v: "+38%", note: "год к году, по нашим клиентам" },
-  { k: "Выгорание креативов", v: "5–7 дней", note: "против 3–4 недель в 2022" },
-  { k: "Цена редакции in-house", v: "380–720к ₽", note: "в месяц, без гарантий" },
-  { k: "Время до первых результатов", v: "3–6 мес", note: "при классической команде" },
+  { k: "CPM в Meta / VK", v: "+38%", note: "год к году, по нашим клиентам" },
 ];
 
 export default function Problem() {
@@ -76,8 +73,8 @@ export default function Problem() {
                   <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
                     {s.k}
                   </div>
-                  <div className="font-mono text-[9px] text-muted">
-                    0{i + 1}/04
+                  <div className="font-mono text-[9px] uppercase tracking-[0.22em] text-acid">
+                    индекс
                   </div>
                 </div>
                 <div className="mt-3 bignum font-display text-[56px] leading-none tracking-tighter2 lg:text-[80px]">

@@ -76,7 +76,7 @@ export default function ReelStack() {
         className="absolute bottom-6 left-0 hairline bg-bg px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em]"
       >
         <div className="text-muted">за 30 дней</div>
-        <div className="text-ink">8.4M плеев</div>
+        <div className="text-ink">8.4M просмотров</div>
       </motion.div>
     </div>
   );
