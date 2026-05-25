@@ -100,11 +100,6 @@ export default function Pricing() {
                   {t.name}
                 </h3>
               </div>
-              {t.featured && (
-                <span className="bg-bg px-2 py-1 font-mono text-[9px] uppercase tracking-[0.22em] text-acid">
-                  выбирают 7 из 10
-                </span>
-              )}
             </div>
 
             <div className="mt-8">
